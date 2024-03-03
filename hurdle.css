@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Commissioner", sans-serif;
+}
+
 .banner-container {
   width: 100%;
   height: 100vh;
@@ -64,4 +68,68 @@
 
 .btn-danger {
   background-color: #fa4219;
+}
+
+.ham-icon {
+  display: none;
+}
+
+.service-container {
+  background-color: rgb(24, 144, 24);
+}
+
+.services {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  padding-bottom: 20px;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+  color: white;
+  /* margin-bottom: 20px; */
+}
+
+.service-header {
+  color: #f94a23;
+  font-weight: 600;
+}
+
+.service-tag {
+  font-size: 30px;
+}
+
+.service-description {
+  max-width: 400px;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  color: black;
+  border-radius: 13px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 700px) {
+  .navitems {
+    display: none;
+  }
+
+  .ham-icon {
+    display: block;
+  }
 }
