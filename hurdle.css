@@ -124,6 +124,39 @@ body {
   font-weight: 600;
 }
 
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.testi-header {
+  font-weight: 600;
+}
+
+.testi-title {
+  color: #f94a23;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.testi-desc {
+  max-width: 400px;
+  background-color: #62902b;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.testi-image {
+  position: absolute;
+  bottom: -32px;
+  left: 200px;
+}
+
 @media screen and (max-width: 700px) {
   .navitems {
     display: none;
@@ -133,3 +166,5 @@ body {
     display: block;
   }
 }
+
+
