@@ -54,7 +54,9 @@ const newfunc = () => {
 
 const func = (i, j) => {
     console.log(j)
-    console.log(i())
+    i()
 }
 
+
+// here newfunc is callback function
 func(newfunc, "hi there")
