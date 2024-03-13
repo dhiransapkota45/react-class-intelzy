@@ -86,7 +86,7 @@ const newobj = {
     ...obj,
     name: "jo",
     age: 40,
-    newkey: "hi"
+    newkey: "hi"  
 }
 
 // console.log(newobj, obj)
