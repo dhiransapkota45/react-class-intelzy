@@ -56,7 +56,10 @@ const adder = document.getElementById('btn');
 let count = 1
 adder.addEventListener("click", () => {
     const newelemet = document.createElement('div')
-    newelemet.textContent = "I am" + count + "th child"
+    // newelemet.textContent = "I am" + count + "th child"
+
+    newelemet.textContent = `I am ${count}th child`
+
     newelemet.style.color = "red"
     count++
     
