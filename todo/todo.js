@@ -25,5 +25,14 @@ addbtn.addEventListener("click", () => {
     console.log(newli)
 
     todolist.appendChild(newli);
-    
+
+})
+
+document.addEventListener("click", (e) => {
+    console.log(e.target)
+    console.log(e.target.parentElement)
+
+    if (e.target.textContent === "Delete") {
+        e.target.parentElement.remove();
+    }
 })
