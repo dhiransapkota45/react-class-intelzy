@@ -4,6 +4,10 @@ const todolist = document.getElementById('todo-list');
 
 
 addbtn.addEventListener("click", () => {
+    if (inputelement.value === "") {
+        alert("Please enter a todo")
+        return;
+    }
     // console.log(inputelement.value)
     const useinput = inputelement.value;
 
@@ -29,10 +33,26 @@ addbtn.addEventListener("click", () => {
 })
 
 document.addEventListener("click", (e) => {
-    console.log(e.target)
-    console.log(e.target.parentElement)
-
     if (e.target.textContent === "Delete") {
-        e.target.parentElement.remove();
+        const bool = confirm("Are you sure you want to delete this?")
+
+        if (bool === true) {
+            e.target.parentElement.remove();
+        }
+    }
+
+
+    if (e.target.textContent === "Edit") {
+        const newtodo = prompt("Emter new todo")
+        e.target.parentElement.firstChild.textContent = newtodo;
     }
 })
+
+
+
+// alert("Hello World")
+
+// confirm("Are you sure you want to delete this?")
+
+// const val = prompt("Enter your name")
+// console.log(val)
