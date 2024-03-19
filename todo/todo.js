@@ -17,6 +17,7 @@ addbtn.addEventListener("click", () => {
     tododata.textContent = useinput;
 
     const deletebtn = document.createElement("button")
+    // deletebtn.id = "detetebtn"
     deletebtn.textContent = "Delete";
 
     const editbtn = document.createElement("button")
@@ -26,9 +27,9 @@ addbtn.addEventListener("click", () => {
     newli.appendChild(deletebtn);
     newli.appendChild(editbtn);
     newli.style.display = "flex";
-    console.log(newli)
 
     todolist.appendChild(newli);
+    inputelement.value = ""
 
 })
 
@@ -43,10 +44,12 @@ document.addEventListener("click", (e) => {
 
 
     if (e.target.textContent === "Edit") {
-        const newtodo = prompt("Emter new todo")
+        const newtodo = prompt("Emter new todo", e.target.parentElement.firstChild.textContent)
         e.target.parentElement.firstChild.textContent = newtodo;
     }
 })
+
+
 
 
 
